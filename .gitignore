@@ -3,6 +3,7 @@ __pycache__/
 *.py[cod]
 *$py.class
 .README.md.html
+token.txt
 
 # pyenv
 .python-version
