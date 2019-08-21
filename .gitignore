@@ -23,5 +23,3 @@ local_settings.py
 
 # eclipse
 .settings/
-.project
-.pydevproject
