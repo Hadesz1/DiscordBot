@@ -58,15 +58,10 @@
   <li><a href="https://www.python.org/downloads/release">Python3.7</a></li>
   <li><a href="https://git-scm.com/download/win">Git</a></li>
   <li><a href="https://discordapp.com/developers/applications/me">Discord Bot Api</a></li>
-  <li>Python modules can be installed using the script “install_reqs.bat”, running as admin, this will also install Discord API</li>
-    <ul>
-      <li><a href="https://pypi.org/project/discord">discord.py</a></li>
-      <li><a href="https://pypi.python.org/pypi/requests">requests</a></li>
-      <li><a href="https://pypi.python.org/pypi/asyncpg/">asyncpg</a></li>
-      <li><a href="https://pypi.org/project/beautifulsoup4/">beautifulsoup4</a></li>
-      <li><a href="https://pypi.python.org/pypi/imgurpython">imgurpython</a></li>
-      <li><a href="https://pypi.python.org/pypi/gitPython">gitPython</a></li>
-    </ul>
+  <li>Python modules can be installed using the script "install_reqs", running as root, this will also install Discord API or</li>
+	<ul>
+		<li>pip install -r requirements/requirements.txt</li>
+	</ul>
   </li>
 </ul>
 
@@ -78,77 +73,78 @@
 <h2 id="admin-commands">Admin Commands</h2>
 <table style="width:100%">
 	<tr><th>Command</th><th>Description</th></tr>
-		<tr><td>invites</td>												<td>List active invites link for the server</td></tr>
-		<tr><td>banlist</td>												<td>List all members that have been banned</td></tr>
-		<tr><td>unban &lt;member#1234&gt;</td>								<td>UnBan member from the channel</td></tr>
-		<tr><td>ban &lt;member#1234&gt;</td>								<td>Ban member from the channel</td></tr>
+		<tr><td>invites</td>									<td>List active invites link for the server</td></tr>
+		<tr><td>banlist</td>									<td>List all members that have been banned</td></tr>
+		<tr><td>unban &lt;member#1234&gt;</td>						<td>UnBan member from the channel</td></tr>
+		<tr><td>ban &lt;member#1234&gt;</td>							<td>Ban member from the channel</td></tr>
 		<tr><td>kick &lt;member#1234&gt; &lt;reason&gt;</td>				<td>Kick member from the channel</td></tr>
-		<tr><td>blacklist [add,remove] &lt;member#1234&gt;</td>				<td>Add or remove users from the blacklist</td></tr>
+		<tr><td>blacklist [add,remove] &lt;member#1234&gt;</td>		<td>Add or remove users from the blacklist</td></tr>
 		<tr><td>mute [add,remove] &lt;member#1234&gt; &lt;reason&gt;</td>	<td>Mute or unmute an user</td></tr>
-		<tr><td>customcom [add,remove] &lt;command&gt;</td>					<td>Add or remove Custom commands</td></tr>
+		<tr><td>customcom [add,remove] &lt;command&gt;</td>			<td>Add or remove Custom commands</td></tr>
 </table>
 
 <h2 id="config-commands">Config Commands</h2>
 <table style="width:100%">
 	<tr><th>Command</th><th>Description</th></tr>
 		<tr><td>config list</td><td>List all bot configurations</td></tr>
-		<tr><td>config bladmin 		   [on , off]</td>					<td>Able to blacklist server’s admins</td></tr>
-		<tr><td>config muteadmins 	   [on , off]</td>					<td>Able to mute server’s admins</td></tr>
-		<tr><td>config servermessage   [on , off]</td>					<td>Show message when a server gets updated</td></tr>
-		<tr><td>config membermessage   [on , off]</td>					<td>Message when someone changes the profile</td></tr>
-		<tr><td>config mentionpool     [on , off]</td>					<td>Mention everyone when using pool command</td></tr>
-		<tr><td>config anonymouspool   [on , off]</td>					<td>Hide the author’s name from the pool cmd</td></tr>
-		<tr><td>config joinmessage     [on , off]</td>					<td>Show message when a user joins the server</td></tr>
-		<tr><td>config leavemessage    [on , off]</td>					<td>Show message when a user leaves the server</td></tr>
-		<tr><td>config blockinvisible  [on , off]</td>					<td>Block messages from invisible members</td></tr>
-		<tr><td>config botreactions    [on , off]</td>					<td>Bot will react to member words</td></tr>
-		<tr><td>config defaultchannel &lt;channel name&gt;</td>			<td>Default text channel for bot messages</td></tr>
-		<tr><td>config pfilter [on , off] &lt;channel name&gt;</td>		<td>Profanity Filter (block swear/bad words)</td></tr>
+		<tr><td>config bladmin 		   [on , off]</td>			<td>Able to blacklist server’s admins</td></tr>
+		<tr><td>config muteadmins 	   [on , off]</td>			<td>Able to mute server’s admins</td></tr>
+		<tr><td>config servermessage   [on , off]</td>			<td>Show message when a server gets updated</td></tr>
+		<tr><td>config membermessage   [on , off]</td>			<td>Message when someone changes the profile</td></tr>
+		<tr><td>config mentionpool     [on , off]</td>			<td>Mention everyone when using pool command</td></tr>
+		<tr><td>config anonymouspool   [on , off]</td>			<td>Hide the author’s name from the pool cmd</td></tr>
+		<tr><td>config joinmessage     [on , off]</td>			<td>Show message when a user joins the server</td></tr>
+		<tr><td>config leavemessage    [on , off]</td>			<td>Show message when a user leaves the server</td></tr>
+		<tr><td>config blockinvisible  [on , off]</td>			<td>Block messages from invisible members</td></tr>
+		<tr><td>config botreactions    [on , off]</td>			<td>Bot will react to member words</td></tr>
+		<tr><td>config defaultchannel &lt;channel name&gt;</td>		<td>Default text channel for bot messages</td></tr>
+		<tr><td>config pfilter [on , off] &lt;channel name&gt;</td>	<td>Profanity Filter (block swear/bad words)</td></tr>
 </table>
 
 <h2 id="gw2-commands">GW2 Commands</h2>
 <table style="width:100%">
 	<tr><th>Command</th><th>Description</th></tr>
-		<tr><td>gw2 account</td>									<td>General information about your GW2 account</td></tr>
-		<tr><td>gw2 worlds</td>										<td>List all worlds</td></tr>
-		<tr><td>gw2 wvwinfo</td>									<td>Info about a world</td></tr>
-		<tr><td>gw2 lastsession</td>								<td>Info about the gw2 player last game session</td></tr>
+		<tr><td>gw2 account</td>								<td>General information about your GW2 account</td></tr>
+		<tr><td>gw2 worlds</td>									<td>List all worlds</td></tr>
+		<tr><td>gw2 wvwinfo</td>								<td>Info about a world</td></tr>
+		<tr><td>gw2 lastsession</td>							<td>Info about the gw2 player last game session</td></tr>
 		<tr><td>gw2 kdr &lt;worldname&gt;</td>						<td>Info about a wvw kill/death ratings</td></tr>
-		<tr><td>gw2 wiki &lt;name to search&gt;</td>				<td>Search the Guild wars 2 wiki</td></tr>
-		<tr><td>gw2 info &lt;info to search&gt;</td>				<td>Information about a given name/skill/rune</td></tr>
-		<tr><td>gw2 daily [pve, pvp, wvw, fractals]</td>			<td>Show today's Dailies</td></tr>
+		<tr><td>gw2 wiki &lt;name to search&gt;</td>					<td>Search the Guild wars 2 wiki</td></tr>
+		<tr><td>gw2 info &lt;info to search&gt;</td>					<td>Information about a given name/skill/rune</td></tr>
+		<tr><td>gw2 daily [pve, pvp, wvw, fractals]</td>		<td>Show today's Dailies</td></tr>
 		<tr><td>gw2 key [add , remove , info] &lt;api key&gt;</td>	<td>Add/Remove/Info - GW2 APIkey managing</td></tr>
-		<tr><td>gw2 [match, wvwinfo] &lt;world name&gt;</td>		<td>Info about a wvw match</td></tr>
-		<tr><td>gw2 config list</td>								<td>List all gw2 configurations in the server</td></tr>
+		<tr><td>gw2 [match, wvwinfo] &lt;world name&gt;</td>			<td>Info about a wvw match</td></tr>
+		<tr><td>gw2 config list</td>							<td>List all gw2 configurations in the server</td></tr>
 		<tr><td>gw2 config roletimer &lt;time secs&gt;</td>			<td>Timer to check for api roles in seconds</td></tr>
-		<tr><td>gw2 config lastsession [on , off]</td>				<td>Bot should record users last sessions</td></tr>
+		<tr><td>gw2 config lastsession [on , off]</td>			<td>Bot should record users last sessions</td></tr>
 		<tr><td>gw2 config apirole [on , off] &lt;server name&gt;</td><td>Bot should add role that matches gw2 server</td></tr>
 </table>
 
 <h2 id="misc-commands">Misc Commands</h2>
 <table style="width:100%">
 	<tr><th>Command</th><th>Description</th></tr>
-		<tr><td>about</td>										<td>Display bot info</td></tr>
-		<tr><td>echo</td>										<td>Show your msg again</td></tr>
-		<tr><td>ping</td>										<td>Test latency by receiving a ping message</td></tr>
-		<tr><td>roll</td>										<td>Rolls random number</td></tr>
-		<tr><td>serverinfo</td>									<td>Shows server’s informations</td></tr>
+		<tr><td>about</td>								<td>Display bot info</td></tr>
+		<tr><td>echo</td>								<td>Show your msg again</td></tr>
+		<tr><td>ping</td>								<td>Test latency by receiving a ping message</td></tr>
+		<tr><td>roll</td>								<td>Rolls random number</td></tr>
+		<tr><td>tts &lt;message&gt;</td>						<td>Send TTS as .mp3 to current channel</td></tr>
+		<tr><td>serverinfo</td>							<td>Shows server’s informations</td></tr>
 		<tr><td>userinfo &lt;member#1234&gt;</td>				<td>Shows discord user informations</td></tr>
 		<tr><td>lmgtfy &lt;link&gt;</td>						<td>Creates a lmgtfy link</td></tr>
-		<tr><td>simplepool &lt;question&gt; &lt;emoji&gt;</td>	<td>Create a simple yes,no pool</td></tr>
-		<tr><td>pool &lt;Question;Choice1;Choice2&gt;</td>		<td>Creates a numeric list of choices pool</td></tr>
+		<tr><td>simplepool &lt;question&gt; &lt;emoji&gt;</td>		<td>Create a simple yes,no pool</td></tr>
+		<tr><td>pool &lt;Question;Choice1;Choice2&gt;</td>	<td>Creates a numeric list of choices pool</td></tr>
 </table>
 
 <h2 id="bot-owner-commands">Bot Owner Commands</h2>
 <table style="width:100%">
 	<tr><th>Command</th><th>Description</th></tr>
-		<tr><td>owner executesql</td>								<td>Execute all sql files inside data/sql dir</td></tr>
-		<tr><td>owner reload</td>									<td>Command to reload all extensions</td></tr>
-		<tr><td>owner servers</td>									<td>Display all servers in database</td></tr>
+		<tr><td>owner executesql</td>						<td>Execute all sql files inside data/sql dir</td></tr>
+		<tr><td>owner reload</td>							<td>Command to reload all extensions</td></tr>
+		<tr><td>owner servers</td>							<td>Display all servers in database</td></tr>
 		<tr><td>owner prefix &lt;new prefix&gt;</td>				<td>Change bot prefix for commands</td></tr>
-		<tr><td>owner reloadcog &lt;src.cogs.bot.name&gt;</td>		<td>Command to reload a module</td></tr>
+		<tr><td>owner reloadcog &lt;src.cogs.bot.name&gt;</td>	<td>Command to reload a module</td></tr>
 		<tr><td>owner botdescription &lt;new description&gt;</td>	<td>Change bot description</td></tr>
-		<tr><td>owner botgame &lt;new game&gt;</td>					<td>Change game that bot is playing</td></tr>
+		<tr><td>owner botgame &lt;new game&gt;</td>				<td>Change game that bot is playing</td></tr>
 </table>
 
 <h2 id="acknowledgements">Acknowledgements</h2>

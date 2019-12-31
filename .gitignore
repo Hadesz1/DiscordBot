@@ -1,12 +1,11 @@
 __pycache__/
-.Python
-*.py[cod]
-*$py.class
 .README.md.html
-token.txt
-
-# pyenv
-.python-version
+.pydevproject
+.project
+config/
+data/
+logs/
+src/
 
 # PyInstaller
 *.spec
@@ -14,13 +13,3 @@ token.txt
 build/
 dist/
 
-# Pip
-pip-log.txt
-pip-delete-this-directory.txt
-
-# Django
-*.log
-local_settings.py
-
-# eclipse
-.settings/
