@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/DiscordBot/assets/css/style.css?v=41dce1b8b3ee377fee5d97cc71687268c7c17bd9">
 
-<!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>A Multifunction Bot for Discord | DiscordBot</title>
-<meta name="generator" content="Jekyll v3.8.5" />
-<meta property="og:title" content="A Multifunction Bot for Discord" />
-<meta property="og:locale" content="en_US" />
-<link rel="canonical" href="https://ddc.github.io/DiscordBot/" />
-<meta property="og:url" content="https://ddc.github.io/DiscordBot/" />
-<meta property="og:site_name" content="DiscordBot" />
-<script type="application/ld+json">
-{"@type":"WebSite","headline":"A Multifunction Bot for Discord","url":"https://ddc.github.io/DiscordBot/","name":"DiscordBot","@context":"http://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
+	<!-- Begin Jekyll SEO tag v2.5.0 -->
+	<title>A Multifunction Bot for Discord | DiscordBot</title>
+	<meta name="generator" content="Jekyll v3.8.5" />
+	<meta property="og:title" content="A Multifunction Bot for Discord" />
+	<meta property="og:locale" content="en_US" />
+	<link rel="canonical" href="https://ddc.github.io/DiscordBot/" />
+	<meta property="og:url" content="https://ddc.github.io/DiscordBot/" />
+	<meta property="og:site_name" content="DiscordBot" />
+	<script type="application/ld+json">
+	{"@type":"WebSite","headline":"A Multifunction Bot for Discord","url":"https://ddc.github.io/DiscordBot/","name":"DiscordBot","@context":"http://schema.org"}</script>
+	<!-- End Jekyll SEO tag -->
   </head>
   
  <body>
@@ -40,115 +40,298 @@
 <a href="https://github.com/ddc/DiscordBot/releases/latest"><img src="https://img.shields.io/github/release/ddc/DiscordBot.svg?style=plastic" alt="GitHub release" /></a></p>
 
 <p>Choice of PostgreSQL or SQLite3 as database.</p>
-<h3 id="download"><a href="https://github.com/ddc/DiscordBot/releases/latest">Download</a></h3>
-<h2 id="requirements">Requirements</h2>
+<h3 id="install-guide---wiki"><a href="https://ddc.github.io/DiscordBot">Install Guide - Wiki</a></h3>
 <ul>
-  <li><a href="https://www.python.org/downloads/release">Python3.7</a></li>
-  <li><a href="https://git-scm.com/download/win">Git</a></li>
-  <li><a href="https://discordapp.com/developers/applications/me">Discord Bot Api</a></li>
-  <li>Python modules can be installed using the script "install_reqs", running as root or using pip:</li>
-	<ul>
-		<li>pip install -r requirements/requirements.txt</li>
-	</ul>
+<li>Docker (replace &quot;my-token&quot; with your bot token)
+<ul>
+<li>git clone https://github.com/ddc/DiscordBot.git &amp;&amp; cd DiscordBot</li>
+<li>docker-compose build --build-arg token=&quot;my-token&quot;</li>
+<li>docker-compose up -d</li>
+</ul></li>
 </ul>
-
 <h2 id="games-included">Games Included</h2>
 <ul>
-  <li><a href="https://www.guildwars2.com">Guild Wars 2</a></li>
+<li><a href="https://www.guildwars2.com">Guild Wars 2</a></li>
 </ul>
-
 <h2 id="admin-commands">Admin Commands</h2>
-<table style="width:100%">
-	<tr><th>Command</th><th>Description</th></tr>
-		<tr><td>invites</td>									<td>List active invites link for the server</td></tr>
-		<tr><td>banlist</td>									<td>List all members that have been banned</td></tr>
-		<tr><td>unban &lt;member#1234&gt;</td>						<td>UnBan member from the channel</td></tr>
-		<tr><td>ban &lt;member#1234&gt;</td>							<td>Ban member from the channel</td></tr>
-		<tr><td>kick &lt;member#1234&gt; &lt;reason&gt;</td>				<td>Kick member from the channel</td></tr>
-		<tr><td>blacklist [add,remove] &lt;member#1234&gt;</td>		<td>Add or remove users from the blacklist</td></tr>
-		<tr><td>mute [add,remove] &lt;member#1234&gt; &lt;reason&gt;</td>	<td>Mute or unmute an user</td></tr>
-		<tr><td>customcom [add,remove] &lt;command&gt;</td>			<td>Add or remove Custom commands</td></tr>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Command</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">invites</td>
+<td align="left">List active invites link for the server</td>
+</tr>
+<tr class="even">
+<td align="left">banlist</td>
+<td align="left">List all members that have been banned</td>
+</tr>
+<tr class="odd">
+<td align="left">unban &lt;<em>member#1234</em>&gt;</td>
+<td align="left">UnBan member from the channel</td>
+</tr>
+<tr class="even">
+<td align="left">ban &lt;<em>member#1234</em>&gt; &lt;<em>reason</em>&gt;</td>
+<td align="left">Ban member from the channel</td>
+</tr>
+<tr class="odd">
+<td align="left">kick &lt;<em>member#1234</em>&gt; &lt;<em>reason</em>&gt;</td>
+<td align="left">Kick member from the channel</td>
+</tr>
+<tr class="even">
+<td align="left">blacklist [add,remove] &lt;<em>member#1234</em>&gt;</td>
+<td align="left">Add or remove users from the blacklist</td>
+</tr>
+<tr class="odd">
+<td align="left">mute [add,remove] &lt;<em>member#1234</em>&gt; &lt;<em>reason</em>&gt;</td>
+<td align="left">Mute or unmute an user</td>
+</tr>
+<tr class="even">
+<td align="left">customcom [add,remove] &lt;<em>command</em>&gt;</td>
+<td align="left">Add or remove Custom commands</td>
+</tr>
+</tbody>
 </table>
-
 <h2 id="config-commands">Config Commands</h2>
-<table style="width:100%">
-	<tr><th>Command</th><th>Description</th></tr>
-		<tr><td>config list</td><td>List all bot configurations</td></tr>
-		<tr><td>config bladmin 		   [on , off]</td>			<td>Able to blacklist server’s admins</td></tr>
-		<tr><td>config muteadmins 	   [on , off]</td>			<td>Able to mute server’s admins</td></tr>
-		<tr><td>config servermessage   [on , off]</td>			<td>Show message when a server gets updated</td></tr>
-		<tr><td>config membermessage   [on , off]</td>			<td>Message when someone changes the profile</td></tr>
-		<tr><td>config mentionpool     [on , off]</td>			<td>Mention everyone when using pool command</td></tr>
-		<tr><td>config anonymouspool   [on , off]</td>			<td>Hide the author’s name from the pool cmd</td></tr>
-		<tr><td>config joinmessage     [on , off]</td>			<td>Show message when a user joins the server</td></tr>
-		<tr><td>config leavemessage    [on , off]</td>			<td>Show message when a user leaves the server</td></tr>
-		<tr><td>config blockinvisible  [on , off]</td>			<td>Block messages from invisible members</td></tr>
-		<tr><td>config botreactions    [on , off]</td>			<td>Bot will react to member words</td></tr>
-		<tr><td>config defaultchannel &lt;channel name&gt;</td>		<td>Default text channel for bot messages</td></tr>
-		<tr><td>config pfilter [on , off] &lt;channel name&gt;</td>	<td>Profanity Filter (block swear/bad words)</td></tr>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Command</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">config list</td>
+<td align="left">List all bot configurations</td>
+</tr>
+<tr class="even">
+<td align="left">config bladmin [on , off]</td>
+<td align="left">Able to blacklist server's admins</td>
+</tr>
+<tr class="odd">
+<td align="left">config muteadmins [on , off]</td>
+<td align="left">Able to mute server's admins</td>
+</tr>
+<tr class="even">
+<td align="left">config servermessage [on , off]</td>
+<td align="left">Show message when a server gets updated</td>
+</tr>
+<tr class="odd">
+<td align="left">config membermessage [on , off]</td>
+<td align="left">Message when someone changes the profile</td>
+</tr>
+<tr class="even">
+<td align="left">config mentionpool [on , off]</td>
+<td align="left">Mention everyone when using pool command</td>
+</tr>
+<tr class="odd">
+<td align="left">config anonymouspool [on , off]</td>
+<td align="left">Hide the author's name from the pool cmd</td>
+</tr>
+<tr class="even">
+<td align="left">config joinmessage [on , off]</td>
+<td align="left">Show message when a user joins the server</td>
+</tr>
+<tr class="odd">
+<td align="left">config leavemessage [on , off]</td>
+<td align="left">Show message when a user leaves the server</td>
+</tr>
+<tr class="even">
+<td align="left">config blockinvisible [on , off]</td>
+<td align="left">Block messages from invisible members</td>
+</tr>
+<tr class="odd">
+<td align="left">config botreactions [on , off]</td>
+<td align="left">Bot will react to member words</td>
+</tr>
+<tr class="even">
+<td align="left">config defaultchannel &lt;<em>channel name</em>&gt;</td>
+<td align="left">Default text channel for bot messages</td>
+</tr>
+<tr class="odd">
+<td align="left">config pfilter [on , off] &lt;<em>channel name</em>&gt;</td>
+<td align="left">Profanity Filter (block swear/bad words)</td>
+</tr>
+</tbody>
 </table>
-
 <h2 id="gw2-commands">GW2 Commands</h2>
-<table style="width:100%">
-	<tr><th>Command</th><th>Description</th></tr>
-		<tr><td>gw2 account</td>								<td>General information about your GW2 account</td></tr>
-		<tr><td>gw2 worlds</td>									<td>List all worlds</td></tr>
-		<tr><td>gw2 wvwinfo</td>								<td>Info about a world</td></tr>
-		<tr><td>gw2 lastsession</td>							<td>Info about the gw2 player last game session</td></tr>
-		<tr><td>gw2 kdr &lt;worldname&gt;</td>						<td>Info about a wvw kill/death ratings</td></tr>
-		<tr><td>gw2 wiki &lt;name to search&gt;</td>					<td>Search the Guild wars 2 wiki</td></tr>
-		<tr><td>gw2 info &lt;info to search&gt;</td>					<td>Information about a given name/skill/rune</td></tr>
-		<tr><td>gw2 daily [pve, pvp, wvw, fractals]</td>		<td>Show today's Dailies</td></tr>
-		<tr><td>gw2 key [add , remove , info] &lt;api key&gt;</td>	<td>Add/Remove/Info - GW2 APIkey managing</td></tr>
-		<tr><td>gw2 [match, wvwinfo] &lt;world name&gt;</td>			<td>Info about a wvw match</td></tr>
-		<tr><td>gw2 config list</td>							<td>List all gw2 configurations in the server</td></tr>
-		<tr><td>gw2 config roletimer &lt;time secs&gt;</td>			<td>Timer to check for api roles in seconds</td></tr>
-		<tr><td>gw2 config lastsession [on , off]</td>			<td>Bot should record users last sessions</td></tr>
-		<tr><td>gw2 config apirole [on , off] &lt;server name&gt;</td><td>Bot should add role that matches gw2 server</td></tr>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Command</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">gw2 account</td>
+<td align="left">General information about your GW2 account</td>
+</tr>
+<tr class="even">
+<td align="left">gw2 worlds</td>
+<td align="left">List all worlds</td>
+</tr>
+<tr class="odd">
+<td align="left">gw2 wvwinfo</td>
+<td align="left">Info about a world</td>
+</tr>
+<tr class="even">
+<td align="left">gw2 lastsession</td>
+<td align="left">Info about the gw2 player last game session</td>
+</tr>
+<tr class="odd">
+<td align="left">gw2 kdr &lt;<em>worldname</em>&gt;</td>
+<td align="left">Info about a wvw kill/death ratings</td>
+</tr>
+<tr class="even">
+<td align="left">gw2 wiki &lt;<em>name to search</em>&gt;</td>
+<td align="left">Search the Guild wars 2 wiki</td>
+</tr>
+<tr class="odd">
+<td align="left">gw2 info &lt;<em>info to search</em>&gt;</td>
+<td align="left">Information about a given name/skill/rune</td>
+</tr>
+<tr class="even">
+<td align="left">gw2 daily [pve, pvp, wvw, fractals]</td>
+<td align="left">Show today's Dailies</td>
+</tr>
+<tr class="odd">
+<td align="left">gw2 key [add , remove , info] &lt;<em>api key</em>&gt;</td>
+<td align="left">Add/Remove/Info - GW2 APIkey managing</td>
+</tr>
+<tr class="even">
+<td align="left">gw2 [match, wvwinfo] &lt;<em>world name</em>&gt;</td>
+<td align="left">Info about a wvw match</td>
+</tr>
+<tr class="odd">
+<td align="left">gw2 config list</td>
+<td align="left">List all gw2 configurations in the server</td>
+</tr>
+<tr class="even">
+<td align="left">gw2 config roletimer &lt;<em>time secs</em>&gt;</td>
+<td align="left">Timer to check for api roles in seconds</td>
+</tr>
+<tr class="odd">
+<td align="left">gw2 config lastsession [on , off]</td>
+<td align="left">Bot should record users last sessions</td>
+</tr>
+<tr class="even">
+<td align="left">gw2 config apirole [on , off] &lt;<em>server name</em>&gt;</td>
+<td align="left">Bot should add role that matches gw2 server</td>
+</tr>
+</tbody>
 </table>
-
 <h2 id="misc-commands">Misc Commands</h2>
-<table style="width:100%">
-	<tr><th>Command</th><th>Description</th></tr>
-		<tr><td>about</td>								<td>Display bot info</td></tr>
-		<tr><td>echo</td>								<td>Show your msg again</td></tr>
-		<tr><td>ping</td>								<td>Test latency by receiving a ping message</td></tr>
-		<tr><td>roll</td>								<td>Rolls random number</td></tr>
-		<tr><td>tts &lt;message&gt;</td>						<td>Send TTS as .mp3 to current channel</td></tr>
-		<tr><td>serverinfo</td>							<td>Shows server’s informations</td></tr>
-		<tr><td>userinfo &lt;member#1234&gt;</td>				<td>Shows discord user informations</td></tr>
-		<tr><td>lmgtfy &lt;link&gt;</td>						<td>Creates a lmgtfy link</td></tr>
-		<tr><td>simplepool &lt;question&gt; &lt;emoji&gt;</td>		<td>Create a simple yes,no pool</td></tr>
-		<tr><td>pool &lt;Question;Choice1;Choice2&gt;</td>	<td>Creates a numeric list of choices pool</td></tr>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Command</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">about</td>
+<td align="left">Display bot info</td>
+</tr>
+<tr class="even">
+<td align="left">echo</td>
+<td align="left">Show your msg again</td>
+</tr>
+<tr class="odd">
+<td align="left">ping</td>
+<td align="left">Test latency by receiving a ping message</td>
+</tr>
+<tr class="even">
+<td align="left">roll</td>
+<td align="left">Rolls random number</td>
+</tr>
+<tr class="odd">
+<td align="left">pepe</td>
+<td align="left">Posts a random Pepe from imgur</td>
+</tr>
+<tr class="even">
+<td align="left">tts &lt;<em>message</em>&gt;</td>
+<td align="left">Send TTS as .mp3 to channel</td>
+</tr>
+<tr class="odd">
+<td align="left">serverinfo</td>
+<td align="left">Shows server's informations</td>
+</tr>
+<tr class="even">
+<td align="left">userinfo &lt;<em>member#1234</em>&gt;</td>
+<td align="left">Shows discord user informations</td>
+</tr>
+<tr class="odd">
+<td align="left">lmgtfy &lt;<em>link</em>&gt;</td>
+<td align="left">Creates a lmgtfy link</td>
+</tr>
+<tr class="even">
+<td align="left">simplepool &lt;<em>question</em>&gt; &lt;<em>emoji</em>&gt;</td>
+<td align="left">Create a simple yes,no pool</td>
+</tr>
+<tr class="odd">
+<td align="left">pool &lt;<em>Question;Choice1;Choice2</em>&gt;</td>
+<td align="left">Creates a numeric list of choices pool</td>
+</tr>
+</tbody>
 </table>
-
 <h2 id="bot-owner-commands">Bot Owner Commands</h2>
-<table style="width:100%">
-	<tr><th>Command</th><th>Description</th></tr>
-		<tr><td>owner executesql</td>						<td>Execute all sql files inside data/sql dir</td></tr>
-		<tr><td>owner reload</td>							<td>Command to reload all extensions</td></tr>
-		<tr><td>owner servers</td>							<td>Display all servers in database</td></tr>
-		<tr><td>owner prefix &lt;new prefix&gt;</td>				<td>Change bot prefix for commands</td></tr>
-		<tr><td>owner reloadcog &lt;src.cogs.bot.name&gt;</td>	<td>Command to reload a module</td></tr>
-		<tr><td>owner botdescription &lt;new description&gt;</td>	<td>Change bot description</td></tr>
-		<tr><td>owner botgame &lt;new game&gt;</td>				<td>Change game that bot is playing</td></tr>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Command</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">owner executesql</td>
+<td align="left">Execute all sql files inside data/sql dir</td>
+</tr>
+<tr class="even">
+<td align="left">owner reload</td>
+<td align="left">Command to reload all extensions</td>
+</tr>
+<tr class="odd">
+<td align="left">owner servers</td>
+<td align="left">Display all servers in database</td>
+</tr>
+<tr class="even">
+<td align="left">owner prefix &lt;<em>new prefix</em>&gt;</td>
+<td align="left">Change bot prefix for commands</td>
+</tr>
+<tr class="odd">
+<td align="left">owner reloadcog &lt;<em>src.cogs.bot.name</em>&gt;</td>
+<td align="left">Command to reload a module</td>
+</tr>
+<tr class="even">
+<td align="left">owner botdescription &lt;<em>new description</em>&gt;</td>
+<td align="left">Change bot description</td>
+</tr>
+<tr class="odd">
+<td align="left">owner botgame &lt;<em>new game</em>&gt;</td>
+<td align="left">Change game that bot is playing</td>
+</tr>
+</tbody>
 </table>
-
 <h2 id="acknowledgements">Acknowledgements</h2>
 <ul>
-  <li><a href="https://wiki.guildwars2.com/wiki/API:2">Guild Wars 2 API</a></li>
-  <li><a href="https://www.postgresql.org">PostgreSQL</a></li>
-  <li><a href="https://discordapp.com/developers/applications/me">Discord Bot Api</a></li>
-  <li><a href="https://sqlite.org">SQLite3</a></li>
-  <li><a href="https://git-scm.com/download">Git</a></li>
+<li><a href="https://wiki.guildwars2.com/wiki/API:2">Guild Wars 2 API</a></li>
+<li><a href="https://www.postgresql.org">PostgreSQL</a></li>
+<li><a href="https://discordapp.com/developers/applications/me">Discord Bot Api</a></li>
+<li><a href="https://sqlite.org">SQLite3</a></li>
+<li><a href="https://git-scm.com/download">Git</a></li>
 </ul>
-
 <h2 id="license">License</h2>
 <p>Released under the <a href="LICENSE">GNU GPL v3</a>.</p>
-
 <h2 id="buy-me-a-cup-of-coffee">Buy me a cup of coffee</h2>
-<p>This bot is open source and always will be, even if I don’t get donations. That said, I know there are people out there that may still want to donate just to show their appreciation so this is for you guys. Thanks in advance!</p>
-
+<p>This bot is open source and always will be, even if I don't get donations. That said, I know there are people out there that may still want to donate just to show their appreciation so this is for you guys. Thanks in advance!</p>
 <p><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=38E66BHC4623Y"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" alt="paypal" /></a></p>
       </section>
     </div>
